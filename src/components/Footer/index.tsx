@@ -1,5 +1,6 @@
 import { GithubOutlined } from '@ant-design/icons';
 import { DefaultFooter } from '@ant-design/pro-components';
+import { GITHUB_URL } from '@/constant';
 const Footer: React.FC = () => {
   const defaultMessage = '程序员 Moon 出品';
   const currentYear = new Date().getFullYear();
@@ -20,7 +21,7 @@ const Footer: React.FC = () => {
               <GithubOutlined /> moon GitHub
             </>
           ),
-          href: 'https://github.com/moonSCX',
+          href: GITHUB_URL,
           blankTarget: true,
         },
         {
